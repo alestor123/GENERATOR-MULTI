@@ -67,10 +67,6 @@
       "prettier"
     ]
   },
-  "scripts": {
-    "pretest": "eslint .",
-    "test": "jest"
-  },
   "repository": "https://github.com/alestor123/GENERATOR-MULTI.git",
   "license": "MIT"
 }
