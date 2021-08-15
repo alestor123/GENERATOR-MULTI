@@ -1,0 +1,1 @@
+const <%= camelCase %> = require('./App')

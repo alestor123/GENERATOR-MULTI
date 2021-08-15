@@ -1,0 +1,38 @@
+{
+	"name": "<%= moduleName %>",
+	"version": "0.0.0",
+	"description": "<%= moduleDescription %>",
+	"main": "App.js",
+	"license": "MIT",
+	"repository": "<%= ghUname %>/<%= repoName %>",
+	<% if (donate) { %>"funding": "<%= donate %>",<% }  %>
+	"homepage": "https://github.com/alestor123/CREATE-PROFILE#readme",
+	"author": {
+		"name": "<%= authorName %>",
+		"email": "<%= email %>",
+		"url": "<%= website %>"
+	},
+	"type": "module",<% if (cli) { %>
+	"bin": "cli.js",<% } else { %>"exports": "./App.js",<% } %>
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "standard && node test.js | tap-spec",
+    	"lint": "standard . --fix"
+	},
+	"files": [
+		"App.js"<% if (cli) { %>,
+		"cli.js"<% } %>
+	],
+	"keywords": [<% if (cli) { %>
+		"cli-app",
+		"cli",<% } %>
+		""
+	],
+	"devDependencies": {
+        "standard": "^16.0.3",
+        "tap": "^15.0.9",
+        "tap-spec": "^5.0.0"
+}
+}

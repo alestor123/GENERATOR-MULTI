@@ -34,7 +34,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "figlet": "^1.5.2",
-    "normalize-url": "^7.0.1",
+    "normalize-url": "^5.0.0",
     "yeoman-generator": "^3.1.1"
   },
   "jest": {
@@ -43,11 +43,7 @@
   "lint-staged": {
     "*.js": [
       "standard . --fix",
-      "git add"
-    ],
-    "*.json": [
-      "standard . --fix",
-      "git add"
+      "git add ."
     ]
   },
   "husky": {
